@@ -1,45 +1,99 @@
+/* GLOBAL IMPROVEMENTS */
+body{
+    background-color:#f5f6f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HEADER / HERO */
 header {
     background-image: url("https://www.sportsnet.ca/wp-content/uploads/2026/01/skinner.jpg");
- background-position: upper center;
- background-size: cover;
- box-shadow: 0px 0px 30px gray;
- margin-bottom: 50px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 6px 25px rgba(0,0,0,.25);
+    margin-bottom: 60px;
+    padding: 60px 0;
 }
- #hero-text{
-    color:black !important;
-    font-size: 92px;
-    text-shadow: 4px 2px 5px goldenrod;
+
+/* Hero title */
+#hero-text{
+    color: black !important;
+    font-size: 64px; /* smaller = more professional */
     font-weight: 800;
+    letter-spacing: -1px;
+    text-shadow: 0 3px 10px goldenrod; /* softer golden glow */
 }
+
+/* Subtitle */
 header p {
     color:black;
-    font-size: 35px !important;
-    font-weight: 900 !important;
-    text-shadow: 1px 1px 2px goldenrod;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    text-shadow: 1px 3px 5px goldenrod; /* removing harsh shadows helps professionalism */
 }
+
+/* CTA Button */
 #cta{
     color: goldenrod;
     background-color: black;
-    border-color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: all .25s ease;
 }
+
 #cta:hover {
     color: black;
     background-color: goldenrod;
-    border-color: black;
+    border-color: goldenrod;
+    transform: translateY(-2px); /* subtle lift */
 }
+
+/* CARDS */
+#card{
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    transition: transform .25s ease, box-shadow .25s ease;
+    margin-bottom: 30px;
+}
+
+#card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0,0,0,.18);
+}
+
+/* Card image */
+.card-img-top{
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Card title */
 #first-card-title {
     color: black;
-    font-size: 35px;
-    text-shadow: 1px 1px 5px goldenrod;
-    font-weight: 900 !important;
+    font-size: 24px;
+    font-weight: 700 !important;
     text-align: center;
+    text-shadow: none;
 }
+
+/* Card text */
 #first-card-reason {
-    color: black;
-    font-size: 25px;
-    font-weight: 750 !important;
+    color: #444;
+    font-size: 17px;
+    font-weight: 500 !important;
     text-align: center;
 }
-#card {
-    
+
+/* FOOTER */
+#footer {
+    background-color: white;
+    border-top: 1px solid #e2e2e2;
+}
+
+#footer-text {
+    color: #555 !important;
+    font-size: 16px;
+    font-weight: 500;
+    text-shadow: none;
 }
